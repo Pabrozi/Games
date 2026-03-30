@@ -1,0 +1,68 @@
+{
+  "site_name": "Pabrozi",
+  "site_url": "https://pabrozi.com",
+  "html_lang": "pt-br",
+  "locale": "pt-BR",
+  "og_locale": "pt_BR",
+  "theme_color": "#0a0a0a",
+  "tagline": "Mais FPS. Menos travamentos.",
+  "default_robots": "index,follow",
+  "default_og_type": "website",
+  "default_twitter_card": "summary_large_image",
+  "default_og_image": "assets/og-image.png",
+  "favicon_svg": "assets/favicon.svg",
+  "favicon_png": "assets/favicon-32.png",
+  "apple_touch_icon": "assets/apple-touch-icon.png",
+  "manifest": "site.webmanifest",
+  "ad_label": "Espaco lateral para Google AdSense",
+  "inline_ad_label": "Espaco reservado para Google AdSense",
+  "contact_email": "contato@pabrozi.com",
+  "html_glob": "*.html",
+  "exclude_from_sitemap": [
+    "404.html"
+  ],
+  "nav_links": [
+    {
+      "href": "index.html",
+      "label": "Inicio"
+    },
+    {
+      "href": "jogos-leves.html",
+      "label": "Jogos Leves"
+    },
+    {
+      "href": "aumentar-fps.html",
+      "label": "Aumentar FPS"
+    },
+    {
+      "href": "jogos-gratis.html",
+      "label": "Jogos Gratis"
+    },
+    {
+      "href": "promo.html",
+      "label": "Promo"
+    },
+    {
+      "href": "configuracao.html",
+      "label": "Configuracao"
+    }
+  ],
+  "footer_links": [
+    {
+      "href": "sobre.html",
+      "label": "Sobre"
+    },
+    {
+      "href": "contato.html",
+      "label": "Contato"
+    },
+    {
+      "href": "privacidade.html",
+      "label": "Privacidade"
+    },
+    {
+      "href": "termos.html",
+      "label": "Termos"
+    }
+  ]
+}

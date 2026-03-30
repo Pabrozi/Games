@@ -1,0 +1,77 @@
+<section class="hero-grid">
+    <div class="page-intro">
+      <span class="eyebrow">Snapshot oficial</span>
+      <h2>Jogos gratis da Steam e da Epic com links diretos</h2>
+      <p>
+        Este catalogo carrega um snapshot local gerado a partir das vitrines oficiais das duas lojas.
+        A busca usa indices por termo para responder melhor em mobile, e os cards mostram os dois botoes
+        quando o mesmo jogo foi associado com seguranca entre as plataformas.
+      </p>
+    </div>
+    <div class="panel">
+      <h3>Como usar</h3>
+      <ul class="feature-list">
+        <li>Pesquise por nome ou palavra do titulo e combine filtros por plataforma e genero.</li>
+        <li>Cada card leva direto para a pagina oficial do jogo na loja.</li>
+        <li>Os generos saem dos metadados das lojas e ajudam a navegar sem baixar o catalogo inteiro.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="catalog-stats" id="catalogStats">
+    <article class="catalog-stat">
+      <strong>Carregando...</strong>
+      <span>Preparando contadores do catalogo</span>
+    </article>
+  </section>
+
+  <input class="search" type="text" id="freeSearch" placeholder="Buscar por nome ou palavra do jogo...">
+
+  <div class="toolbar">
+    <button class="filter-btn active" data-filter="todos" type="button">Todos</button>
+    <button class="filter-btn" data-filter="steam" type="button">Steam</button>
+    <button class="filter-btn" data-filter="epic" type="button">Epic</button>
+    <button class="filter-btn" data-filter="ambas" type="button">Ambas</button>
+    <select class="select genre-select" id="genreFilter" aria-label="Filtrar jogos por genero">
+      <option value="todos">Todos os generos</option>
+    </select>
+  </div>
+
+  <section class="grid" id="freeGamesGrid"></section>
+
+  <div class="load-more-wrap">
+    <button class="submit-btn" id="loadMoreBtn" type="button" hidden>Carregar mais jogos</button>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Artigos para ir alem da lista</h2>
+      <p>Depois de escolher um jogo, use os guias abaixo para extrair mais desempenho.</p>
+    </div>
+    <div class="grid">
+      <a class="card-link" href="aumentar-fps-sem-upgrade.html">
+        <article class="card fade-in">
+          <h3>Como aumentar FPS sem trocar hardware</h3>
+          <p>Organize o sistema antes de julgar qualquer jogo como pesado.</p>
+        </article>
+      </a>
+      <a class="card-link" href="valorant-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como rodar Valorant em PC fraco</h3>
+          <p>Exemplo concreto de ajuste para um free-to-play popular.</p>
+        </article>
+      </a>
+      <a class="card-link" href="league-of-legends-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como rodar League of Legends em PC fraco</h3>
+          <p>Outra rota forte para quem joga competitivo em notebook simples.</p>
+        </article>
+      </a>
+      <a class="card-link" href="roblox-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como melhorar Roblox em PC fraco</h3>
+          <p>Aprenda a lidar com mapas pesados e variacao de desempenho em Roblox.</p>
+        </article>
+      </a>
+    </div>
+  </section>

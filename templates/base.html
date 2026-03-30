@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{HTML_LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="robots" content="{{ROBOTS}}">
+  <meta name="theme-color" content="{{THEME_COLOR}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <link rel="icon" type="image/svg+xml" href="{{FAVICON_SVG}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{FAVICON_PNG}}">
+  <link rel="apple-touch-icon" href="{{APPLE_TOUCH_ICON}}">
+  <link rel="manifest" href="{{WEB_MANIFEST}}">
+  <meta property="og:locale" content="{{OG_LOCALE}}">
+  <meta property="og:site_name" content="{{SITE_NAME}}">
+  <meta property="og:type" content="{{OG_TYPE}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE_URL}}">
+  <meta name="twitter:card" content="{{TWITTER_CARD}}">
+  <meta name="twitter:title" content="{{TWITTER_TITLE}}">
+  <meta name="twitter:description" content="{{TWITTER_DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+  <link rel="stylesheet" href="style.css">
+{{EXTRA_HEAD}}
+</head>
+<body{{BODY_ATTRIBUTES}}>
+<header>
+  <h1>{{SITE_NAME}}</h1>
+  <p>{{TAGLINE}}</p>
+</header>
+
+<nav>
+{{NAV_LINKS}}
+</nav>
+
+<div class="page-shell">
+  <aside class="side-ad" aria-label="Publicidade lateral esquerda">
+    <div class="ad">{{SIDE_AD_LABEL}}</div>
+  </aside>
+
+<main class="container">
+{{MAIN_CONTENT}}
+</main>
+
+  <aside class="side-ad" aria-label="Publicidade lateral direita">
+    <div class="ad">{{SIDE_AD_LABEL}}</div>
+  </aside>
+</div>
+
+<footer>
+  <p>&copy; {{COPYRIGHT_YEAR}} {{SITE_NAME}}</p>
+  <p>{{FOOTER_LINKS}}</p>
+</footer>
+{{PAGE_SCRIPT}}
+</body>
+</html>

@@ -1,0 +1,52 @@
+<section class="hero-grid">
+    <div class="page-intro">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Contato rapido para sugestoes, feedbacks e parcerias</h2>
+      <p>
+        Esta pagina valida os campos no front e envia a mensagem para o servidor do site.
+        Assim o contato funciona sem depender do aplicativo de email do visitante.
+      </p>
+    </div>
+    <div class="panel">
+      <h3>Canais</h3>
+      <ul class="contact-list">
+        <li>Email base: {{CONTACT_EMAIL}}</li>
+        <li>Resposta estimada: ate 3 dias uteis</li>
+        <li>Use assuntos objetivos para agilizar o retorno</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="split">
+    <form class="form-card" id="contactForm" novalidate>
+      <h2>Formulario</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input class="input" id="name" name="name" type="text" placeholder="Seu nome">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" placeholder="voce@exemplo.com">
+        </div>
+        <div class="field">
+          <label for="subject">Assunto</label>
+          <input class="input" id="subject" name="subject" type="text" placeholder="Ex.: sugestao de conteudo">
+        </div>
+        <div class="field">
+          <label for="message">Mensagem</label>
+          <textarea class="textarea" id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <div class="field field-honeypot" aria-hidden="true">
+          <label for="website">Website</label>
+          <input class="input" id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="submit-btn" id="contactSubmitBtn" type="submit">Enviar mensagem</button>
+      </div>
+    </form>
+
+    <div class="result-box" id="contactResult">
+      <h3>Status</h3>
+      <p>Preencha o formulario para enviar sua mensagem ao site.</p>
+    </div>
+  </section>

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos gratis para PC fraco | Pabrozi</title>
+  <meta name="description" content="Catalogo do Pabrozi com jogos gratis da Steam e da Epic, busca por nome e links diretos para cada loja.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://pabrozi.com/jogos-gratis.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pabrozi">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jogos gratis da Steam e da Epic | Pabrozi">
+  <meta property="og:description" content="Consulte um snapshot atual do catalogo gratuito da Steam e da Epic com links diretos por plataforma.">
+  <meta property="og:url" content="https://pabrozi.com/jogos-gratis.html">
+  <meta property="og:image" content="https://pabrozi.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jogos gratis da Steam e da Epic | Pabrozi">
+  <meta name="twitter:description" content="Catalogo grande com busca, filtro e botoes reais para Steam e Epic.">
+  <meta name="twitter:image" content="https://pabrozi.com/assets/og-image.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+  <h1>Pabrozi</h1>
+  <p>Mais FPS. Menos travamentos.</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jogos-leves.html">Jogos Leves</a>
+  <a href="aumentar-fps.html">Aumentar FPS</a>
+  <a class="active" href="jogos-gratis.html">Jogos Gratis</a>
+  <a href="promo.html">Promo</a>
+  <a href="configuracao.html">Configuracao</a>
+</nav>
+
+<div class="page-shell">
+  <aside class="side-ad" aria-label="Publicidade lateral esquerda">
+    <div class="ad">Espaco lateral para Google AdSense</div>
+  </aside>
+
+<main class="container">
+<section class="hero-grid">
+    <div class="page-intro">
+      <span class="eyebrow">Snapshot oficial</span>
+      <h2>Jogos gratis da Steam e da Epic com links diretos</h2>
+      <p>
+        Este catalogo carrega um snapshot local gerado a partir das vitrines oficiais das duas lojas.
+        A busca usa indices por termo para responder melhor em mobile, e os cards mostram os dois botoes
+        quando o mesmo jogo foi associado com seguranca entre as plataformas.
+      </p>
+    </div>
+    <div class="panel">
+      <h3>Como usar</h3>
+      <ul class="feature-list">
+        <li>Pesquise por nome ou palavra do titulo e combine filtros por plataforma e genero.</li>
+        <li>Cada card leva direto para a pagina oficial do jogo na loja.</li>
+        <li>Os generos saem dos metadados das lojas e ajudam a navegar sem baixar o catalogo inteiro.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="catalog-stats" id="catalogStats">
+    <article class="catalog-stat">
+      <strong>Carregando...</strong>
+      <span>Preparando contadores do catalogo</span>
+    </article>
+  </section>
+
+  <input class="search" type="text" id="freeSearch" placeholder="Buscar por nome ou palavra do jogo...">
+
+  <div class="toolbar">
+    <button class="filter-btn active" data-filter="todos" type="button">Todos</button>
+    <button class="filter-btn" data-filter="steam" type="button">Steam</button>
+    <button class="filter-btn" data-filter="epic" type="button">Epic</button>
+    <button class="filter-btn" data-filter="ambas" type="button">Ambas</button>
+    <select class="select genre-select" id="genreFilter" aria-label="Filtrar jogos por genero">
+      <option value="todos">Todos os generos</option>
+    </select>
+  </div>
+
+  <section class="grid" id="freeGamesGrid"></section>
+
+  <div class="load-more-wrap">
+    <button class="submit-btn" id="loadMoreBtn" type="button" hidden>Carregar mais jogos</button>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Artigos para ir alem da lista</h2>
+      <p>Depois de escolher um jogo, use os guias abaixo para extrair mais desempenho.</p>
+    </div>
+    <div class="grid">
+      <a class="card-link" href="aumentar-fps-sem-upgrade.html">
+        <article class="card fade-in">
+          <h3>Como aumentar FPS sem trocar hardware</h3>
+          <p>Organize o sistema antes de julgar qualquer jogo como pesado.</p>
+        </article>
+      </a>
+      <a class="card-link" href="valorant-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como rodar Valorant em PC fraco</h3>
+          <p>Exemplo concreto de ajuste para um free-to-play popular.</p>
+        </article>
+      </a>
+      <a class="card-link" href="league-of-legends-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como rodar League of Legends em PC fraco</h3>
+          <p>Outra rota forte para quem joga competitivo em notebook simples.</p>
+        </article>
+      </a>
+      <a class="card-link" href="roblox-pc-fraco.html">
+        <article class="card fade-in">
+          <h3>Como melhorar Roblox em PC fraco</h3>
+          <p>Aprenda a lidar com mapas pesados e variacao de desempenho em Roblox.</p>
+        </article>
+      </a>
+    </div>
+  </section>
+</main>
+
+  <aside class="side-ad" aria-label="Publicidade lateral direita">
+    <div class="ad">Espaco lateral para Google AdSense</div>
+  </aside>
+</div>
+
+<footer>
+  <p>&copy; 2026 Pabrozi</p>
+  <p><a href="sobre.html">Sobre</a> |
+    <a href="contato.html">Contato</a> |
+    <a href="privacidade.html">Privacidade</a> |
+    <a href="termos.html">Termos</a></p>
+</footer>
+
+<script>
+const FREE_PAGE_SIZE = 60;
+const FILTER_TO_VIEW = {
+  todos: 'all',
+  steam: 'steam',
+  epic: 'epic',
+  ambas: 'both'
+};
+
+const state = {
+  filteredGames: [],
+  visibleCount: FREE_PAGE_SIZE,
+  activeFilter: 'todos',
+  activeGenre: 'todos',
+  query: '',
+  stats: null,
+  snapshotDate: '',
+  manifest: null,
+  browseCache: {
+    all: { games: [], loadedPageCount: 0 },
+    steam: { games: [], loadedPageCount: 0 },
+    epic: { games: [], loadedPageCount: 0 },
+    both: { games: [], loadedPageCount: 0 }
+  },
+  searchCache: new Map(),
+  genreCache: new Map()
+};
+
+const freeSearch = document.getElementById('freeSearch');
+const freeGamesGrid = document.getElementById('freeGamesGrid');
+const loadMoreBtn = document.getElementById('loadMoreBtn');
+const catalogStats = document.getElementById('catalogStats');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const genreFilter = document.getElementById('genreFilter');
+
+function formatNumber(value) {
+  return new Intl.NumberFormat('pt-BR').format(value);
+}
+
+function normalizeText(value) {
+  return value
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function compactText(value) {
+  return normalizeText(value).replace(/\s+/g, '');
+}
+
+function tokenize(value) {
+  return normalizeText(value).split(/\s+/).filter(Boolean);
+}
+
+function abbreviateName(name) {
+  const maxLength = 34;
+  if (name.length <= maxLength) {
+    return name;
+  }
+  return name.slice(0, maxLength - 3).trimEnd() + '...';
+}
+
+function renderStats() {
+  if (!state.stats) {
+    return;
+  }
+
+  catalogStats.innerHTML = `
+    <article class="catalog-stat">
+      <strong>${formatNumber(state.stats.merged_count)}</strong>
+      <span>jogos no catalogo combinado</span>
+    </article>
+    <article class="catalog-stat">
+      <strong>${formatNumber(state.stats.steam_count)}</strong>
+      <span>itens gratuitos encontrados na Steam</span>
+    </article>
+    <article class="catalog-stat">
+      <strong>${formatNumber(state.stats.epic_count)}</strong>
+      <span>itens gratuitos encontrados na Epic</span>
+    </article>
+    <article class="catalog-stat">
+      <strong>${formatNumber(state.stats.both_platforms_count)}</strong>
+      <span>jogos encontrados nas duas plataformas</span>
+    </article>
+  `;
+}
+
+function renderGenreOptions() {
+  if (!state.manifest || !state.manifest.genres || !state.manifest.genres.options) {
+    return;
+  }
+
+  genreFilter.innerHTML = '<option value="todos">Todos os generos</option>';
+
+  state.manifest.genres.options.forEach(option => {
+    const element = document.createElement('option');
+    element.value = option.slug;
+    element.textContent = `${option.label} (${formatNumber(option.count)})`;
+    genreFilter.appendChild(element);
+  });
+}
+
+function matchesPlatform(game) {
+  if (state.activeFilter === 'steam') {
+    return Boolean(game.steam_url);
+  }
+  if (state.activeFilter === 'epic') {
+    return Boolean(game.epic_url);
+  }
+  if (state.activeFilter === 'ambas') {
+    return Boolean(game.steam_url && game.epic_url);
+  }
+  return true;
+}
+
+function matchesGenre(game) {
+  if (state.activeGenre === 'todos') {
+    return true;
+  }
+
+  return Array.isArray(game.genre_slugs) && game.genre_slugs.includes(state.activeGenre);
+}
+
+function matchesQuery(game) {
+  if (!state.query) {
+    return true;
+  }
+
+  const queryTokens = tokenize(state.query);
+  if (!queryTokens.length) {
+    return true;
+  }
+
+  const compactQuery = queryTokens.join('');
+  const normalizedName = game.normalized_name || compactText(game.name);
+  const searchText = game.search_text || normalizeText(game.name);
+
+  return normalizedName.includes(compactQuery) || queryTokens.every(token => searchText.includes(token));
+}
+
+function currentViewKey() {
+  return FILTER_TO_VIEW[state.activeFilter] || 'all';
+}
+
+function currentViewManifest() {
+  return state.manifest ? state.manifest.browse[currentViewKey()] : null;
+}
+
+function currentBrowseCache() {
+  return state.browseCache[currentViewKey()];
+}
+
+async function fetchJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error('Falha ao carregar ' + path);
+  }
+  return response.json();
+}
+
+async function loadBrowsePage(viewKey, pageNumber) {
+  const view = state.manifest?.browse?.[viewKey];
+  const cache = state.browseCache[viewKey];
+
+  if (!view || !cache || pageNumber <= 0 || pageNumber > view.page_count || pageNumber <= cache.loadedPageCount) {
+    return;
+  }
+
+  const filename = view.pages[pageNumber - 1];
+  const payload = await fetchJson('data/free-games/' + filename);
+  cache.games.push(...payload.games);
+  cache.loadedPageCount = pageNumber;
+}
+
+async function ensureBrowseReady() {
+  const viewKey = currentViewKey();
+  const cache = state.browseCache[viewKey];
+  if (!cache.loadedPageCount) {
+    await loadBrowsePage(viewKey, 1);
+  }
+}
+
+function resolveSearchDescriptor() {
+  const queryTokens = tokenize(state.query);
+  if (!queryTokens.length) {
+    return null;
+  }
+
+  const firstToken = queryTokens[0];
+  const twoCharKey = firstToken.slice(0, 2);
+  const oneCharKey = firstToken.charAt(0);
+
+  if (twoCharKey.length === 2 && state.manifest.search.two_char_keys.includes(twoCharKey)) {
+    return {
+      cacheKey: 'two:' + twoCharKey,
+      path: `data/free-games/${state.manifest.search.two_char_dir}/${twoCharKey}.json`
+    };
+  }
+
+  if (oneCharKey && state.manifest.search.one_char_keys.includes(oneCharKey)) {
+    return {
+      cacheKey: 'one:' + oneCharKey,
+      path: `data/free-games/${state.manifest.search.one_char_dir}/${oneCharKey}.json`
+    };
+  }
+
+  return null;
+}
+
+async function loadSearchPool() {
+  const descriptor = resolveSearchDescriptor();
+  if (!descriptor) {
+    return [];
+  }
+
+  if (!state.searchCache.has(descriptor.cacheKey)) {
+    const payload = await fetchJson(descriptor.path);
+    state.searchCache.set(descriptor.cacheKey, payload.games || []);
+  }
+
+  return state.searchCache.get(descriptor.cacheKey) || [];
+}
+
+async function loadGenrePool(slug) {
+  if (!state.manifest || !state.manifest.genres || !state.manifest.genres.files[slug]) {
+    return [];
+  }
+
+  if (!state.genreCache.has(slug)) {
+    const payload = await fetchJson('data/free-games/' + state.manifest.genres.files[slug]);
+    state.genreCache.set(slug, payload.games || []);
+  }
+
+  return state.genreCache.get(slug) || [];
+}
+
+function renderGrid() {
+  freeGamesGrid.innerHTML = '';
+
+  if (!state.filteredGames.length) {
+    freeGamesGrid.innerHTML = `
+      <article class="card">
+        <h3>Nenhum jogo encontrado</h3>
+        <p>Tente outro termo de busca, troque o filtro de plataforma ou escolha outro genero.</p>
+      </article>
+    `;
+    loadMoreBtn.hidden = true;
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  const slice = state.filteredGames.slice(0, state.visibleCount);
+
+  slice.forEach(game => {
+    const article = document.createElement('article');
+    article.className = 'card catalog-card fade-in';
+
+    const platformTag = game.steam_url && game.epic_url
+      ? 'Steam + Epic'
+      : game.steam_url
+        ? 'Steam'
+        : 'Epic';
+
+    const media = document.createElement('div');
+    media.className = 'catalog-media';
+    media.title = game.name;
+
+    const image = document.createElement('img');
+    image.src = game.image_url || 'assets/og-image.png';
+    image.alt = 'Capa do jogo ' + game.name;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.referrerPolicy = 'no-referrer';
+    image.addEventListener('error', () => {
+      image.src = 'assets/og-image.png';
+    }, { once: true });
+
+    const fullName = document.createElement('div');
+    fullName.className = 'catalog-fullname';
+    fullName.textContent = game.name;
+
+    const title = document.createElement('h3');
+    title.className = 'catalog-title';
+    title.title = game.name;
+    title.textContent = abbreviateName(game.name);
+
+    const isTruncated = title.textContent !== game.name;
+
+    if (isTruncated) {
+      media.classList.add('is-interactive');
+      media.tabIndex = 0;
+      media.setAttribute('role', 'button');
+      media.setAttribute('aria-expanded', 'false');
+      media.setAttribute('aria-label', 'Mostrar nome completo de ' + game.name);
+
+      const closeFullName = () => {
+        article.classList.remove('show-fullname');
+        media.setAttribute('aria-expanded', 'false');
+      };
+
+      const toggleFullName = () => {
+        const expanded = article.classList.toggle('show-fullname');
+        media.setAttribute('aria-expanded', String(expanded));
+      };
+
+      media.addEventListener('click', toggleFullName);
+      media.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleFullName();
+        }
+        if (event.key === 'Escape') {
+          closeFullName();
+        }
+      });
+      media.addEventListener('blur', closeFullName);
+    }
+
+    const platformElement = document.createElement('span');
+    platformElement.className = 'tag';
+    platformElement.textContent = platformTag;
+
+    const body = document.createElement('div');
+    body.className = 'catalog-body';
+
+    const description = document.createElement('p');
+    description.className = 'catalog-description';
+
+    const genres = Array.isArray(game.genres) && game.genres.length ? game.genres.slice(0, 2).join(' / ') : 'Genero nao informado';
+    description.textContent = `${genres}. ${game.steam_url && game.epic_url
+      ? 'Links oficiais disponiveis nas duas lojas.'
+      : game.steam_url
+        ? 'Link oficial disponivel na Steam.'
+        : 'Link oficial disponivel na Epic.'}`;
+
+    const buttonRow = document.createElement('div');
+    buttonRow.className = 'catalog-actions';
+
+    media.appendChild(image);
+    media.appendChild(fullName);
+
+    body.appendChild(platformElement);
+    body.appendChild(title);
+
+    if (isTruncated) {
+      const inlineFullName = document.createElement('p');
+      inlineFullName.className = 'catalog-fullname-inline';
+      inlineFullName.textContent = game.name;
+      body.appendChild(inlineFullName);
+    }
+
+    if (game.steam_url) {
+      const steamLink = document.createElement('a');
+      steamLink.className = 'button-primary';
+      steamLink.href = game.steam_url;
+      steamLink.target = '_blank';
+      steamLink.rel = 'noopener noreferrer';
+      steamLink.textContent = 'Steam';
+      buttonRow.appendChild(steamLink);
+    }
+
+    if (game.epic_url) {
+      const epicLink = document.createElement('a');
+      epicLink.className = 'button-secondary';
+      epicLink.href = game.epic_url;
+      epicLink.target = '_blank';
+      epicLink.rel = 'noopener noreferrer';
+      epicLink.textContent = 'Epic';
+      buttonRow.appendChild(epicLink);
+    }
+
+    body.appendChild(description);
+    body.appendChild(buttonRow);
+    article.appendChild(media);
+    article.appendChild(body);
+    fragment.appendChild(article);
+  });
+
+  freeGamesGrid.appendChild(fragment);
+
+  const browseView = currentViewManifest();
+  const browseCache = currentBrowseCache();
+  const hasMoreVisible = state.visibleCount < state.filteredGames.length;
+  const hasMoreBrowsePages = !state.query && state.activeGenre === 'todos' && browseView && browseCache.loadedPageCount < browseView.page_count;
+
+  loadMoreBtn.hidden = !(hasMoreVisible || hasMoreBrowsePages);
+}
+
+async function resolvePool() {
+  if (state.activeGenre !== 'todos') {
+    const genreGames = await loadGenrePool(state.activeGenre);
+    return genreGames.filter(game => matchesPlatform(game) && matchesQuery(game));
+  }
+
+  if (state.query) {
+    const pool = await loadSearchPool();
+    return pool.filter(game => matchesPlatform(game) && matchesGenre(game) && matchesQuery(game));
+  }
+
+  await ensureBrowseReady();
+  return currentBrowseCache().games.filter(game => matchesGenre(game));
+}
+
+async function refreshCatalog() {
+  try {
+    state.filteredGames = await resolvePool();
+    state.visibleCount = Math.min(FREE_PAGE_SIZE, state.filteredGames.length);
+    renderGrid();
+  } catch (error) {
+    freeGamesGrid.innerHTML = `
+      <article class="card">
+        <h3>Falha ao carregar</h3>
+        <p>Verifique se os arquivos em data/free-games/ estao disponiveis junto do site.</p>
+      </article>
+    `;
+    loadMoreBtn.hidden = true;
+  }
+}
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', async () => {
+    filterButtons.forEach(item => item.classList.remove('active'));
+    button.classList.add('active');
+    state.activeFilter = button.dataset.filter;
+    await refreshCatalog();
+  });
+});
+
+genreFilter.addEventListener('change', async event => {
+  state.activeGenre = event.target.value;
+  await refreshCatalog();
+});
+
+freeSearch.addEventListener('input', async event => {
+  state.query = event.target.value.trim();
+  await refreshCatalog();
+});
+
+loadMoreBtn.addEventListener('click', async () => {
+  if (state.visibleCount < state.filteredGames.length) {
+    state.visibleCount = Math.min(state.visibleCount + FREE_PAGE_SIZE, state.filteredGames.length);
+    renderGrid();
+    return;
+  }
+
+  if (state.query || state.activeGenre !== 'todos') {
+    renderGrid();
+    return;
+  }
+
+  const viewKey = currentViewKey();
+  const view = currentViewManifest();
+  const cache = currentBrowseCache();
+
+  if (view && cache.loadedPageCount < view.page_count) {
+    await loadBrowsePage(viewKey, cache.loadedPageCount + 1);
+    state.filteredGames = cache.games.slice();
+    state.visibleCount = Math.min(state.visibleCount + FREE_PAGE_SIZE, state.filteredGames.length);
+    renderGrid();
+  }
+});
+
+fetch('data/free-games/manifest.json')
+  .then(response => response.json())
+  .then(async payload => {
+    state.manifest = payload;
+    state.stats = payload.stats;
+    state.snapshotDate = payload.snapshot_date;
+    renderStats();
+    renderGenreOptions();
+    await refreshCatalog();
+  })
+  .catch(() => {
+    freeGamesGrid.innerHTML = `
+      <article class="card">
+        <h3>Falha ao carregar</h3>
+        <p>Verifique se os arquivos em data/free-games/ estao disponiveis junto do site.</p>
+      </article>
+    `;
+  });
+</script>
+</body>
+</html>

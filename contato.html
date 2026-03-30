@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Pabrozi</title>
+  <meta name="description" content="Entre em contato com o Pabrozi para enviar sugestoes, feedbacks e propostas de parceria.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://pabrozi.com/contato.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Pabrozi">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato | Pabrozi">
+  <meta property="og:description" content="Formulario para contato, sugestoes de pauta e parcerias.">
+  <meta property="og:url" content="https://pabrozi.com/contato.html">
+  <meta property="og:image" content="https://pabrozi.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contato | Pabrozi">
+  <meta name="twitter:description" content="Envie uma mensagem para o Pabrozi por formulario com validacao no front.">
+  <meta name="twitter:image" content="https://pabrozi.com/assets/og-image.png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<header>
+  <h1>Pabrozi</h1>
+  <p>Mais FPS. Menos travamentos.</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="jogos-leves.html">Jogos Leves</a>
+  <a href="aumentar-fps.html">Aumentar FPS</a>
+  <a href="jogos-gratis.html">Jogos Gratis</a>
+  <a href="promo.html">Promo</a>
+  <a href="configuracao.html">Configuracao</a>
+</nav>
+
+<div class="page-shell">
+  <aside class="side-ad" aria-label="Publicidade lateral esquerda">
+    <div class="ad">Espaco lateral para Google AdSense</div>
+  </aside>
+
+<main class="container">
+<section class="hero-grid">
+    <div class="page-intro">
+      <span class="eyebrow">Fale com a gente</span>
+      <h2>Contato rapido para sugestoes, feedbacks e parcerias</h2>
+      <p>
+        Esta pagina valida os campos no front e envia a mensagem para o servidor do site.
+        Assim o contato funciona sem depender do aplicativo de email do visitante.
+      </p>
+    </div>
+    <div class="panel">
+      <h3>Canais</h3>
+      <ul class="contact-list">
+        <li>Email base: contato@pabrozi.com</li>
+        <li>Resposta estimada: ate 3 dias uteis</li>
+        <li>Use assuntos objetivos para agilizar o retorno</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="split">
+    <form class="form-card" id="contactForm" novalidate>
+      <h2>Formulario</h2>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">Nome</label>
+          <input class="input" id="name" name="name" type="text" placeholder="Seu nome">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" name="email" type="email" placeholder="voce@exemplo.com">
+        </div>
+        <div class="field">
+          <label for="subject">Assunto</label>
+          <input class="input" id="subject" name="subject" type="text" placeholder="Ex.: sugestao de conteudo">
+        </div>
+        <div class="field">
+          <label for="message">Mensagem</label>
+          <textarea class="textarea" id="message" name="message" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        <div class="field field-honeypot" aria-hidden="true">
+          <label for="website">Website</label>
+          <input class="input" id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="submit-btn" id="contactSubmitBtn" type="submit">Enviar mensagem</button>
+      </div>
+    </form>
+
+    <div class="result-box" id="contactResult">
+      <h3>Status</h3>
+      <p>Preencha o formulario para enviar sua mensagem ao site.</p>
+    </div>
+  </section>
+</main>
+
+  <aside class="side-ad" aria-label="Publicidade lateral direita">
+    <div class="ad">Espaco lateral para Google AdSense</div>
+  </aside>
+</div>
+
+<footer>
+  <p>&copy; 2026 Pabrozi</p>
+  <p><a href="sobre.html">Sobre</a> |
+    <a href="contato.html">Contato</a> |
+    <a href="privacidade.html">Privacidade</a> |
+    <a href="termos.html">Termos</a></p>
+</footer>
+
+<script>
+const contactForm = document.getElementById('contactForm');
+const contactResult = document.getElementById('contactResult');
+const contactSubmitBtn = document.getElementById('contactSubmitBtn');
+
+function setContactStatus(title, message, tone = 'default') {
+  contactResult.innerHTML = '';
+  if (tone) {
+    contactResult.dataset.tone = tone;
+  } else {
+    delete contactResult.dataset.tone;
+  }
+
+  const heading = document.createElement('h3');
+  heading.textContent = title;
+
+  const paragraph = document.createElement('p');
+  paragraph.textContent = message;
+
+  contactResult.appendChild(heading);
+  contactResult.appendChild(paragraph);
+}
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+contactForm.addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const payload = {
+    name: document.getElementById('name').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    subject: document.getElementById('subject').value.trim(),
+    message: document.getElementById('message').value.trim(),
+    website: document.getElementById('website').value.trim()
+  };
+
+  if (!payload.name || !payload.email || !payload.subject || !payload.message) {
+    setContactStatus('Status', 'Preencha todos os campos antes de continuar.', 'warning');
+    return;
+  }
+
+  if (!isValidEmail(payload.email)) {
+    setContactStatus('Status', 'Digite um email valido antes de enviar.', 'warning');
+    return;
+  }
+
+  contactSubmitBtn.disabled = true;
+  contactSubmitBtn.textContent = 'Enviando...';
+  setContactStatus('Enviando', 'Sua mensagem esta sendo enviada agora.', 'info');
+
+  try {
+    const response = await fetch('contact-submit.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await response.json().catch(() => ({ success: false }));
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || 'Falha ao enviar a mensagem.');
+    }
+
+    contactForm.reset();
+    setContactStatus('Mensagem enviada', result.message || 'Recebemos sua mensagem com sucesso.', 'success');
+  } catch (error) {
+    setContactStatus('Falha no envio', error.message || 'Nao foi possivel enviar sua mensagem agora.', 'error');
+  } finally {
+    contactSubmitBtn.disabled = false;
+    contactSubmitBtn.textContent = 'Enviar mensagem';
+  }
+});
+</script>
+</body>
+</html>
